@@ -22,5 +22,11 @@ namespace Exercicio_EnumeracoesComposicao.Entities
         {
             return 0;
         }
+
+        public Order(DateTime moment, OrderStatus status)
+        {
+            this.moment = moment;
+            this.status = status;
+        }
     }
 }

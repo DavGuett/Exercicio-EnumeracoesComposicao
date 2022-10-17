@@ -11,6 +11,6 @@ namespace Exercicio_EnumeracoesComposicao.Entities.Enums
         PENDING_PAYMENT = 0,
         PROCESSING = 1,
         SHIPPED = 2,
-        DELIVERD = 3
+        DELIVERED = 3
     }
 }
