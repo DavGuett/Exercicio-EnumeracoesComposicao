@@ -22,7 +22,11 @@ namespace Exercicio_EnumeracoesComposicao.Entities
         public override string ToString()
         {
             StringBuilder text = new StringBuilder();
-            text.Append("Olá");
+            text.Append(this.Name);
+            text.Append(" ");
+            text.Append($"({this.birthDate.ToString("dd/MM/yyyy")})");
+            text.Append(" - ");
+            text.Append(this.Email);
             return text.ToString();
         }
     }
