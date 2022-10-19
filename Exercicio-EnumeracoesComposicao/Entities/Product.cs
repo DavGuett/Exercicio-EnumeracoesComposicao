@@ -16,5 +16,15 @@ namespace Exercicio_EnumeracoesComposicao.Entities
             this.Name = name;
             this.Price = price;
         }
+
+        public override string ToString()
+        {
+            StringBuilder text = new StringBuilder();
+            text.Append(this.Name);
+            text.Append(", ");
+            text.Append(this.Price);
+            text.Append(", ");
+            return text.ToString();
+        }
     }
 }

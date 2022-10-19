@@ -48,7 +48,10 @@ for (int i = 1; i <= numberOfItems; i++)
     int productQuantity = int.Parse(Console.ReadLine());
     Product product = new Product(productName, productPrice);
     Console.WriteLine(product.Name);
+
+    OrderItem orderItems = new OrderItem(productQuantity, productPrice);
 }
+
 Console.WriteLine();
 Console.WriteLine("ORDER SUMMARY: ");
 Console.Write("Order moment: ");
@@ -57,3 +60,6 @@ Console.Write("Order status: ");
 Console.WriteLine(order.status);
 Console.Write("Client: ");
 Console.WriteLine(client);
+Console.WriteLine("Order items: ");
+Console.WriteLine();
+
